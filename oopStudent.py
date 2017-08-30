@@ -6,6 +6,15 @@ class Student(object):
     def print_score(self):
         print('%s: %s'% (self.name, self.score))
 
+    def get_grade(self):
+        if self.score >= 90:
+            return 'A'
+        elif self.score >=70:
+            return 'B'
+        elif self.score >=60:
+            return 'C'
+        else:
+            return 'D'
 
 
 bart = Student('Bart Simpson', 59)
