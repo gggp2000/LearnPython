@@ -1,4 +1,4 @@
 from io import BytesIO
 f = BytesIO()
-f.write('zhongwen'.encode('gbk'))
+f.write('中文'.encode('gbk'))
 print(f.getvalue())
